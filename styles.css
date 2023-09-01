@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    background-color: skyblue;
+    color: white;
+    padding: 20px;
+}
+
+#dragArea {
+    width: 300px;
+    height: 200px;
+    border: 2px dashed gray;  /* 경계선 스타일 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background-color: lightgrey;  /* 배경색 변경 */
+}
+
+#dragArea.active {
+    background-color: lightgreen;  /* 드래그 중일 때의 배경색 */
+}
+
+#previewArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
